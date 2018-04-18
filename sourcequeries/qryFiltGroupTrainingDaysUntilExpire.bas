@@ -1,0 +1,4 @@
+SELECT qryFiltrationEmployees.[Employee #] AS Received_Training, qryFiltrationEmployees.[First Name] AS First_Name, qryFiltrationEmployees.[Last Name] AS Last_Name, tblFiltrationQualifications.Area, qryFiltCustomTrainingGroup2.Qualification AS Qualification, qryFiltCustomTrainingGroup2.[Qualification Level] AS [Level], qryFiltCustomTrainingGroup2.[Date trained] AS Date_Trained, qryFiltCustomTrainingGroup2.[Version Trained] AS Version, qryFiltCustomTrainingGroup2.[Employee Number of Trainer] AS [Trainer_#], qryFiltCustomTrainingGroup2.[Days since trained] AS Days_since_trained, qryFiltCustomTrainingGroup2.Hours_to_train AS Training_Hours
+FROM qryFiltrationEmployees, tblFiltrationQualifications, qryFiltCustomTrainingGroup2, qryFiltCustomTrainingGroup2 AS qryFiltCustomTrainingGroup2_1
+WHERE (((qryFiltrationEmployees.[Employee #])=qryFiltCustomTrainingGroup2.[Trained Employee Number]) And ((tblFiltrationQualifications.ID)=qryFiltCustomTrainingGroup2.Qualification));
+

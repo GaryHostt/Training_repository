@@ -1,0 +1,4 @@
+SELECT tblFiltrationEmployeeQualifications.[Multiple Training].Value AS Qualification, tblFiltrationEmployeeQualifications.[Multiple Employees].Value AS [Trained Employee Number], tblFiltrationEmployeeQualifications.[Qualification Level], tblFiltrationEmployeeQualifications.[Date trained], tblFiltrationEmployeeQualifications.ID_Training AS [Employee Number of Trainer], tblFiltrationEmployeeQualifications.[Version Trained], DateDiff("d",[Date Trained],Date()) AS [Days since trained], tblFiltrationEmployeeQualifications.Hours_to_train, tblFiltrationEmployeeQualifications.[Document Title]
+FROM tblFiltrationEmployeeQualifications
+WHERE (((tblFiltrationEmployeeQualifications.[Multiple Training].Value) Is Not Null) AND ((tblFiltrationEmployeeQualifications.[Multiple Employees].Value) Is Not Null));
+

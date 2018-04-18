@@ -1,0 +1,3 @@
+SELECT tblManifoldQualificationsDocuments.Document_ID, tblManifoldQualificationsDocuments.[Document Name], tblManifoldQualificationsDocuments.ID, tblManifoldQualificationsDocuments.[Date Added]
+FROM tblManifoldQualificationsDocuments;
+
